@@ -1,0 +1,32 @@
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/68fda4d2-7b30-4f60-8a90-393bbe9b258f
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "description": "Camisa principal 2023",
+    "price": 349,
+    "stock": 10
+}
+
+###
+DELETE http://localhost:3000/products/aa1fdf55-3c03-496c-9b28-2ed4bd22c138
+
+###
+
+PATCH http://localhost:3000/products/68fda4d2-7b30-4f60-8a90-393bbe9b258f
+Content-Type: application/json
+
+{
+    "price": 259
+}
+
+###
+
+PUT http://localhost:3000/products/68fda4d2-7b30-4f60-8a90-393bbe9b258f
